@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion(29)
+    compileSdkVersion(30)
     buildToolsVersion("29.0.3")
 
     defaultConfig {
         applicationId = "com.example.friendlyshare"
         minSdkVersion(21)
-        targetSdkVersion(29)
+        targetSdkVersion(30)
         versionCode = 1
         versionName = "1.0"
 
@@ -78,7 +78,7 @@ dependencies {
 
     //dagger 2 DI
     kapt("com.google.dagger:dagger-compiler:2.24")
-    implementation("com.google.dagger:dagger:2.24")
+    implementation("com.google.dagger:dagger:2.28.3")
 
     //navigation
     implementation("com.github.terrakok:cicerone:6.6")
@@ -94,10 +94,10 @@ dependencies {
     kapt("com.squareup.moshi:moshi-kotlin-codegen:1.8.0")
 
     //Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1")
     implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.7")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
 
     //RecyclerView

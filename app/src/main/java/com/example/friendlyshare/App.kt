@@ -1,14 +1,12 @@
-package com.example.friendlyshare.common.initializer
+package com.example.friendlyshare
 
-import android.content.Context
-import androidx.startup.Initializer
+import android.app.Application
 import com.example.friendlyshare.di.components.AppComponent
 import com.example.friendlyshare.di.components.DaggerAppComponent
 import com.example.friendlyshare.di.components.PartiesSubcomponent
 import com.example.friendlyshare.di.modules.PartiesModule
 
-class FriendlyShareInitializer : Initializer<Unit> {
-
+class App : Application() {
     companion object {
         lateinit var appComponent: AppComponent
 
@@ -27,11 +25,10 @@ class FriendlyShareInitializer : Initializer<Unit> {
         }
     }
 
-    override fun create(context: Context) {
+    override fun onCreate() {
+        super.onCreate()
         appComponent = DaggerAppComponent.builder()
-            .context(context = context)
+            .context(context = applicationContext)
             .build()
     }
-
-    override fun dependencies(): MutableList<Class<out Initializer<*>>> = mutableListOf()
 }
