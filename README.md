@@ -1,8 +1,7 @@
-Friendly Share - app for help my friends share money for party
+<p>Friendly Share - app for help my friends share money for party</p>
 
-Migrate build.gradle to build.gradle.kts
-DI - Dagger 2
-Architecture - Mvp (Moxy)
-View flow with bindings
+<p>Migrate build.gradle to build.gradle.kts</p>
+<p>DI - Dagger 2</p>
+<p>Architecture - Mvp (Moxy)</p>
 
-Creating UI with JetPack Compose
+<p>Creating UI with JetPack Compose</p>
