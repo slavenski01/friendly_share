@@ -43,4 +43,6 @@ abstract class BaseFragment : MvpAppCompatFragment(), BaseMvpView {
             }
         }
     }
+
+    open fun onBackPressed() {}
 }
